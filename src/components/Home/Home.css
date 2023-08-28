@@ -1,0 +1,38 @@
+/* Regular styles for larger screens */
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    height: 75vh;
+    background-color: rgb(88, 67, 78);
+}
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; /* Center text in mobile view */
+}
+
+.text1 h1 {
+    font-size: 5rem;
+    font-family: monospace;
+    margin-bottom: 0; /* Remove negative margin */
+}
+
+.main {
+    height: 555px; 
+    max-width: 100%; 
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items horizontally */
+        height: auto; /* Allow container to adjust its height */
+    }
+    
+    .text1 h1 {
+        font-size: 3rem; /* Decrease font size for smaller screens */
+    }
+}
